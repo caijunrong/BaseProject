@@ -2,13 +2,15 @@
 //  AppDelegate.m
 //  BaseProject
 //
-//  Created by biyabi on 15/10/19.
-//  Copyright © 2015年 biyabi. All rights reserved.
+//  Created by caijunrong on 15/05/19.
+//  Copyright © 2015年 caijunrong. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) APIUtil *apiUtil;
 
 @end
 
@@ -16,8 +18,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    //初始化API
+    [self initAPI];
+    
+    
     return YES;
+}
+
+- (void)initAPI{
+    
+    _apiUtil = [APIUtil sharedInstance];
+    
+    NSArray *api = [NSArray arrayWithObjects:@"mws.biyabi.com",@"mws1.biyabi.com",@"211.151.52.185:8089", nil];
+    NSArray *soApi = [NSArray arrayWithObjects:@"211.151.52.203:8088",@"211.151.52.202:8088",nil];
+    
+    [_apiUtil initApiWithArray:api];
+    [_apiUtil initSearchApiWithArray:soApi];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

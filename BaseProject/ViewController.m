@@ -2,11 +2,13 @@
 //  ViewController.m
 //  BaseProject
 //
-//  Created by biyabi on 15/10/19.
-//  Copyright © 2015年 biyabi. All rights reserved.
+//  Created by caijunrong on 15/05/19.
+//  Copyright © 2015年 caijunrong. All rights reserved.
 //
 
 #import "ViewController.h"
+
+#import "CommonViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    CommonViewController *comm = [[CommonViewController alloc]init];
+    [self.view addSubview:comm.view];
     
 }
 
