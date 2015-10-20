@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  BaseProject
+
+  Created by caijunrong on 15/05/20.
+  Copyright © 2015年 caijunrong. All rights reserved.
+*/
+
+"home" = "首页";
+"search" = "分类";
+"cart" = "购物车";
+"my" = "我的";

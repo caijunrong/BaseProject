@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "APIUtil.h"
 
 @interface AppDelegate ()
 
@@ -22,10 +23,20 @@
     //初始化API
     [self initAPI];
     
+    //初始化window
+    self.window = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
+    
+    _tabbarController = [[TabbarController alloc]init];
+    
+    self.window.rootViewController = _tabbarController;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
 
+/*
+ *  防止因为IP地址不可用，而导致整个APP都无法访问网络的情况存在
+ */
 - (void)initAPI{
     
     _apiUtil = [APIUtil sharedInstance];

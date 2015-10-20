@@ -22,6 +22,15 @@
 		606CAD3D1BD4CAEF007E21FE /* AppDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD3C1BD4CAEF007E21FE /* AppDataHelper.m */; settings = {ASSET_TAGS = (); }; };
 		606CAD421BD4D324007E21FE /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD411BD4D324007E21FE /* RegExCategories.m */; settings = {ASSET_TAGS = (); }; };
 		606CAD461BD4E04E007E21FE /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD451BD4E04E007E21FE /* CommonViewController.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD4C1BD5EADD007E21FE /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD4B1BD5EADD007E21FE /* TabbarController.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD5F1BD5F108007E21FE /* CommDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD5E1BD5F108007E21FE /* CommDefine.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD661BD5F3BE007E21FE /* ViewControllerB.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD651BD5F3BE007E21FE /* ViewControllerB.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD691BD5F3C8007E21FE /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD681BD5F3C8007E21FE /* ViewControllerC.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD6C1BD5F3D2007E21FE /* ViewControllerD.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD6B1BD5F3D2007E21FE /* ViewControllerD.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD6F1BD5F3F4007E21FE /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD6E1BD5F3F4007E21FE /* ViewControllerA.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD721BD620AB007E21FE /* JRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD711BD620AB007E21FE /* JRBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
+		606CAD741BD63CEC007E21FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606CAD731BD63CEC007E21FE /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
+		606CAD771BD64767007E21FE /* APPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD761BD64767007E21FE /* APPTool.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +83,23 @@
 		606CAD411BD4D324007E21FE /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
 		606CAD441BD4E04E007E21FE /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		606CAD451BD4E04E007E21FE /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		606CAD4A1BD5EADD007E21FE /* TabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabbarController.h; sourceTree = "<group>"; };
+		606CAD4B1BD5EADD007E21FE /* TabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarController.m; sourceTree = "<group>"; };
+		606CAD5D1BD5F108007E21FE /* CommDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommDefine.h; sourceTree = "<group>"; };
+		606CAD5E1BD5F108007E21FE /* CommDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommDefine.m; sourceTree = "<group>"; };
+		606CAD641BD5F3BE007E21FE /* ViewControllerB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerB.h; sourceTree = "<group>"; };
+		606CAD651BD5F3BE007E21FE /* ViewControllerB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerB.m; sourceTree = "<group>"; };
+		606CAD671BD5F3C8007E21FE /* ViewControllerC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerC.h; sourceTree = "<group>"; };
+		606CAD681BD5F3C8007E21FE /* ViewControllerC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerC.m; sourceTree = "<group>"; };
+		606CAD6A1BD5F3D2007E21FE /* ViewControllerD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerD.h; sourceTree = "<group>"; };
+		606CAD6B1BD5F3D2007E21FE /* ViewControllerD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerD.m; sourceTree = "<group>"; };
+		606CAD6D1BD5F3F4007E21FE /* ViewControllerA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
+		606CAD6E1BD5F3F4007E21FE /* ViewControllerA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
+		606CAD701BD620AB007E21FE /* JRBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRBarButtonItem.h; sourceTree = "<group>"; };
+		606CAD711BD620AB007E21FE /* JRBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRBarButtonItem.m; sourceTree = "<group>"; };
+		606CAD731BD63CEC007E21FE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		606CAD751BD64767007E21FE /* APPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTool.h; sourceTree = "<group>"; };
+		606CAD761BD64767007E21FE /* APPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +170,7 @@
 		606CACFB1BD48B5A007E21FE /* BaseProject */ = {
 			isa = PBXGroup;
 			children = (
+				606CAD601BD5F38B007E21FE /* Class */,
 				606CAD431BD4E017007E21FE /* Common */,
 				606CAD371BD4BF0D007E21FE /* Util */,
 				606CAD331BD4A62C007E21FE /* Model */,
@@ -158,6 +185,7 @@
 				606CAD0D1BD48B5A007E21FE /* Info.plist */,
 				606CACFC1BD48B5A007E21FE /* Supporting Files */,
 				606CAD3F1BD4CC0C007E21FE /* PrefixHeader.pch */,
+				606CAD731BD63CEC007E21FE /* Localizable.strings */,
 			);
 			path = BaseProject;
 			sourceTree = "<group>";
@@ -230,10 +258,41 @@
 		606CAD431BD4E017007E21FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				606CAD501BD5EF93007E21FE /* define */,
 				606CAD441BD4E04E007E21FE /* CommonViewController.h */,
 				606CAD451BD4E04E007E21FE /* CommonViewController.m */,
+				606CAD4A1BD5EADD007E21FE /* TabbarController.h */,
+				606CAD4B1BD5EADD007E21FE /* TabbarController.m */,
+				606CAD701BD620AB007E21FE /* JRBarButtonItem.h */,
+				606CAD711BD620AB007E21FE /* JRBarButtonItem.m */,
+				606CAD751BD64767007E21FE /* APPTool.h */,
+				606CAD761BD64767007E21FE /* APPTool.m */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		606CAD501BD5EF93007E21FE /* define */ = {
+			isa = PBXGroup;
+			children = (
+				606CAD5D1BD5F108007E21FE /* CommDefine.h */,
+				606CAD5E1BD5F108007E21FE /* CommDefine.m */,
+			);
+			name = define;
+			sourceTree = "<group>";
+		};
+		606CAD601BD5F38B007E21FE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				606CAD6D1BD5F3F4007E21FE /* ViewControllerA.h */,
+				606CAD6E1BD5F3F4007E21FE /* ViewControllerA.m */,
+				606CAD641BD5F3BE007E21FE /* ViewControllerB.h */,
+				606CAD651BD5F3BE007E21FE /* ViewControllerB.m */,
+				606CAD671BD5F3C8007E21FE /* ViewControllerC.h */,
+				606CAD681BD5F3C8007E21FE /* ViewControllerC.m */,
+				606CAD6A1BD5F3D2007E21FE /* ViewControllerD.h */,
+				606CAD6B1BD5F3D2007E21FE /* ViewControllerD.m */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				606CAD0C1BD48B5A007E21FE /* LaunchScreen.storyboard in Resources */,
+				606CAD741BD63CEC007E21FE /* Localizable.strings in Resources */,
 				606CAD091BD48B5A007E21FE /* Assets.xcassets in Resources */,
 				606CAD071BD48B5A007E21FE /* Main.storyboard in Resources */,
 			);
@@ -403,9 +463,17 @@
 			files = (
 				606CAD3D1BD4CAEF007E21FE /* AppDataHelper.m in Sources */,
 				606CAD361BD4A63D007E21FE /* ApiInfoModel.m in Sources */,
+				606CAD6F1BD5F3F4007E21FE /* ViewControllerA.m in Sources */,
 				606CAD321BD49E5A007E21FE /* APIUtil.m in Sources */,
+				606CAD4C1BD5EADD007E21FE /* TabbarController.m in Sources */,
+				606CAD691BD5F3C8007E21FE /* ViewControllerC.m in Sources */,
 				606CAD041BD48B5A007E21FE /* ViewController.m in Sources */,
 				606CAD011BD48B5A007E21FE /* AppDelegate.m in Sources */,
+				606CAD721BD620AB007E21FE /* JRBarButtonItem.m in Sources */,
+				606CAD6C1BD5F3D2007E21FE /* ViewControllerD.m in Sources */,
+				606CAD5F1BD5F108007E21FE /* CommDefine.m in Sources */,
+				606CAD661BD5F3BE007E21FE /* ViewControllerB.m in Sources */,
+				606CAD771BD64767007E21FE /* APPTool.m in Sources */,
 				606CAD421BD4D324007E21FE /* RegExCategories.m in Sources */,
 				606CAD3A1BD4BF25007E21FE /* NSString+PJR.m in Sources */,
 				606CACFE1BD48B5A007E21FE /* main.m in Sources */,
@@ -553,6 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = BaseProject/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.caijunrong.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -566,6 +635,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = BaseProject/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.caijunrong.BaseProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";

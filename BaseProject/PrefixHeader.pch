@@ -9,11 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-//加入一些常用的头文件，免得每次都加，累死
-#include "APIUtil.h"
-
-
-
+#import "CommDefine.h"
+#import "APPTool.h"
 
 #define APPNAME @"caijunrong"
 

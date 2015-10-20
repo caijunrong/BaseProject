@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "APIUtil.h"
+#import "AppDataHelper.h"
+
 
 @class AFHTTPRequestOperationManager;
 
@@ -24,7 +27,7 @@
 
 //初始化
 -(id)init;
-  
+
 /*
  *  单例
  */
