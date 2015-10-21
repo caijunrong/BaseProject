@@ -7,6 +7,7 @@
 //
 
 #import "ViewControllerB.h"
+#import "PromptView.h"
 
 @interface ViewControllerB ()
 
@@ -20,6 +21,18 @@
     [self setNavTitle:@"第二个页面"];
     self.navigationItem.rightBarButtonItem = [self rightButtonItemWithTitle:nil orImageString:@"link_shuaxin"];
     [self.view setBackgroundColor:[UIColor lightGrayColor]];
+    
+    
+//    PromptView *prompt = [[PromptView alloc] initWithFrame:self.view.frame AndTitleImage:[UIImage imageNamed:@"warnning_review_empty"] AndMainString:@"暂无评论" AndSubString:@"要不抢个沙发，怎么样？"    AndLeftButtonString:@"__" AndRightButtonString:@"果断开抢"];
+//    [self.view addSubview:prompt];
+//    [prompt setPromptLeftBtnClickBlock:^{
+//        NSLog(@"+++");
+//    }];
+//    
+//    [prompt setPromptRightBtnClickBlock:^{
+//        NSLog(@"===");
+//    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -31,6 +31,7 @@
 		606CAD721BD620AB007E21FE /* JRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD711BD620AB007E21FE /* JRBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
 		606CAD741BD63CEC007E21FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606CAD731BD63CEC007E21FE /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
 		606CAD771BD64767007E21FE /* APPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD761BD64767007E21FE /* APPTool.m */; settings = {ASSET_TAGS = (); }; };
+		6070B3461BD72534006E0113 /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3451BD72534006E0113 /* PromptView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		606CAD731BD63CEC007E21FE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		606CAD751BD64767007E21FE /* APPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTool.h; sourceTree = "<group>"; };
 		606CAD761BD64767007E21FE /* APPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTool.m; sourceTree = "<group>"; };
+		6070B3441BD72534006E0113 /* PromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromptView.h; sourceTree = "<group>"; };
+		6070B3451BD72534006E0113 /* PromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,9 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				606CAD601BD5F38B007E21FE /* Class */,
+				606CAD331BD4A62C007E21FE /* Model */,
 				606CAD431BD4E017007E21FE /* Common */,
 				606CAD371BD4BF0D007E21FE /* Util */,
-				606CAD331BD4A62C007E21FE /* Model */,
 				606CAD2F1BD493D8007E21FE /* HTTP */,
 				606CACFF1BD48B5A007E21FE /* AppDelegate.h */,
 				606CAD001BD48B5A007E21FE /* AppDelegate.m */,
@@ -240,6 +243,8 @@
 				606CAD3E1BD4CBA1007E21FE /* Extention */,
 				606CAD301BD49E5A007E21FE /* APIUtil.h */,
 				606CAD311BD49E5A007E21FE /* APIUtil.m */,
+				606CAD751BD64767007E21FE /* APPTool.h */,
+				606CAD761BD64767007E21FE /* APPTool.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -258,15 +263,10 @@
 		606CAD431BD4E017007E21FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				6070B3431BD7247B006E0113 /* CommView */,
 				606CAD501BD5EF93007E21FE /* define */,
 				606CAD441BD4E04E007E21FE /* CommonViewController.h */,
 				606CAD451BD4E04E007E21FE /* CommonViewController.m */,
-				606CAD4A1BD5EADD007E21FE /* TabbarController.h */,
-				606CAD4B1BD5EADD007E21FE /* TabbarController.m */,
-				606CAD701BD620AB007E21FE /* JRBarButtonItem.h */,
-				606CAD711BD620AB007E21FE /* JRBarButtonItem.m */,
-				606CAD751BD64767007E21FE /* APPTool.h */,
-				606CAD761BD64767007E21FE /* APPTool.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -293,6 +293,19 @@
 				606CAD6B1BD5F3D2007E21FE /* ViewControllerD.m */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		6070B3431BD7247B006E0113 /* CommView */ = {
+			isa = PBXGroup;
+			children = (
+				606CAD4A1BD5EADD007E21FE /* TabbarController.h */,
+				606CAD4B1BD5EADD007E21FE /* TabbarController.m */,
+				606CAD701BD620AB007E21FE /* JRBarButtonItem.h */,
+				606CAD711BD620AB007E21FE /* JRBarButtonItem.m */,
+				6070B3441BD72534006E0113 /* PromptView.h */,
+				6070B3451BD72534006E0113 /* PromptView.m */,
+			);
+			name = CommView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +490,7 @@
 				606CAD421BD4D324007E21FE /* RegExCategories.m in Sources */,
 				606CAD3A1BD4BF25007E21FE /* NSString+PJR.m in Sources */,
 				606CACFE1BD48B5A007E21FE /* main.m in Sources */,
+				6070B3461BD72534006E0113 /* PromptView.m in Sources */,
 				606CAD461BD4E04E007E21FE /* CommonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -153,7 +153,7 @@
     _titleView.textColor = NavTextTintColor;
     //        _titleView.shadowColor = [UIColor navTintColor];
     _titleView.backgroundColor = [UIColor clearColor];
-    _titleView.font = [UIFont systemFontOfSize:19.0f];
+    _titleView.font = [UIFont systemFontOfSize:BigTitleTextSize];
     _titleView.textAlignment = NSTextAlignmentCenter;
     CGRect frame = _titleView.frame;
 
