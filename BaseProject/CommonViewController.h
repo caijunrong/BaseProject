@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class AppDataHelper;
-@class APIUtil;
+#import "AppDataHelper.h"
+#import "JRBarButtonItem.h"
+#import "PromptView.h"
 
 @interface CommonViewController : UIViewController
 
@@ -28,8 +28,25 @@
 @property (nonatomic, strong) UIBarButtonItem   *rightBtnItem;
 
 //是否能手势滑动返回
-@property(nonatomic)BOOL canSwipeBack;
+@property (nonatomic, assign) BOOL canSwipeBack;
 
+//网络加载失败
+@property (nonatomic, strong) PromptView *promptNetErrorView;
+
+//搜索为空
+@property (nonatomic, strong) PromptView *promptSearchEmptyView;
+
+//商品为空
+@property (nonatomic, strong) PromptView *promptGoodsEmptyView;
+
+//评论为空
+@property (nonatomic, strong) PromptView *promptReviewEmptyView;
+
+//消息为空
+@property (nonatomic, strong) PromptView *promptMessageEmptyView;
+
+//成功支付
+@property (nonatomic, strong) PromptView *promptPaySuccessView;
 
 + (id)controller;
 
@@ -47,4 +64,7 @@
 
 //增加滑动返回
 - (void)initSwipeBack;
+
+//点击了网络出错重新加载按钮，需要进行的网路操作
+- (void)reloadDetailData;
 @end

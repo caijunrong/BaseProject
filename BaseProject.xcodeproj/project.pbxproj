@@ -32,6 +32,7 @@
 		606CAD741BD63CEC007E21FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606CAD731BD63CEC007E21FE /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
 		606CAD771BD64767007E21FE /* APPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD761BD64767007E21FE /* APPTool.m */; settings = {ASSET_TAGS = (); }; };
 		6070B3461BD72534006E0113 /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3451BD72534006E0113 /* PromptView.m */; settings = {ASSET_TAGS = (); }; };
+		6070B3491BD77B83006E0113 /* CommTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3481BD77B83006E0113 /* CommTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		606CAD761BD64767007E21FE /* APPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTool.m; sourceTree = "<group>"; };
 		6070B3441BD72534006E0113 /* PromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromptView.h; sourceTree = "<group>"; };
 		6070B3451BD72534006E0113 /* PromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptView.m; sourceTree = "<group>"; };
+		6070B3471BD77B83006E0113 /* CommTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommTableViewController.h; sourceTree = "<group>"; };
+		6070B3481BD77B83006E0113 /* CommTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +270,8 @@
 				606CAD501BD5EF93007E21FE /* define */,
 				606CAD441BD4E04E007E21FE /* CommonViewController.h */,
 				606CAD451BD4E04E007E21FE /* CommonViewController.m */,
+				6070B3471BD77B83006E0113 /* CommTableViewController.h */,
+				6070B3481BD77B83006E0113 /* CommTableViewController.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -489,6 +494,7 @@
 				606CAD771BD64767007E21FE /* APPTool.m in Sources */,
 				606CAD421BD4D324007E21FE /* RegExCategories.m in Sources */,
 				606CAD3A1BD4BF25007E21FE /* NSString+PJR.m in Sources */,
+				6070B3491BD77B83006E0113 /* CommTableViewController.m in Sources */,
 				606CACFE1BD48B5A007E21FE /* main.m in Sources */,
 				6070B3461BD72534006E0113 /* PromptView.m in Sources */,
 				606CAD461BD4E04E007E21FE /* CommonViewController.m in Sources */,

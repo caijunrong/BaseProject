@@ -10,3 +10,12 @@
 "search" = "分类";
 "cart" = "购物车";
 "my" = "我的";
+
+"loadFailString" = "数据加载失败";
+"loadFailWarning" = "请确保您的手机已经联网";
+"reloadString" = "重新加载";
+
+"searchNoMore" = "找不到符合条件的商品";
+"searchWarnning" = "试试看其他关键词";
+
+"categoryNone" = "什么东西都没有";

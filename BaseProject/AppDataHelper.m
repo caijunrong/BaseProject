@@ -64,7 +64,7 @@ static AppDataHelper *dataHelper;
 /*
  *  获取列表数据: 数组专用(POST)
  */
--(void)getPostListDataWithUrl:(NSString *)url AndParameter:(NSDictionary *)parameter AndIsRefrresh:(BOOL)isRefresh RefreshSuccess:(void(^)(NSArray *dateArray))refreshSuccess RefreshFailure:(void(^)())refreshFailure RefreshEmpty:(void(^)())refreshEmpty LoadMoreSuccess:(void(^)(NSArray *dataArray))loadmoreSuccess LoadMoreFailure:(void(^)())loadmoreFailure LoadMoreEmpty:(void(^)())loadmoreEmpty Complete:(void(^)())complete{
+-(void)getPostListDataWithUrl:(NSString *)url AndParameter:(NSDictionary *)parameter AndIsRefrresh:(BOOL)isRefresh RefreshSuccess:(void(^)(NSArray *dataArray))refreshSuccess RefreshFailure:(void(^)())refreshFailure RefreshEmpty:(void(^)())refreshEmpty LoadMoreSuccess:(void(^)(NSArray *dataArray))loadmoreSuccess LoadMoreFailure:(void(^)())loadmoreFailure LoadMoreEmpty:(void(^)())loadmoreEmpty Complete:(void(^)())complete{
     
     NSLog(@"API's URL is:%@",url);
     NSLog(@"API' parameter is%@",parameter);
@@ -160,7 +160,7 @@ static AppDataHelper *dataHelper;
 }
 
 #pragma mark GET Method
--(void)getGETMethodListDataWithUrl:(NSString *)url AndParameter:(NSDictionary *)parameter AndIsRefrresh:(BOOL)isRefresh RefreshSuccess:(void(^)(NSArray *dateArray))refreshSuccess RefreshFailure:(void(^)())refreshFailure RefreshEmpty:(void(^)())refreshEmpty LoadMoreSuccess:(void(^)(NSArray *dataArray))loadmoreSuccess LoadMoreFailure:(void(^)())loadmoreFailure LoadMoreEmpty:(void(^)())loadmoreEmpty Complete:(void(^)())complete{
+-(void)getGETMethodListDataWithUrl:(NSString *)url AndParameter:(NSDictionary *)parameter AndIsRefrresh:(BOOL)isRefresh RefreshSuccess:(void(^)(NSArray *dataArray))refreshSuccess RefreshFailure:(void(^)())refreshFailure RefreshEmpty:(void(^)())refreshEmpty LoadMoreSuccess:(void(^)(NSArray *dataArray))loadmoreSuccess LoadMoreFailure:(void(^)())loadmoreFailure LoadMoreEmpty:(void(^)())loadmoreEmpty Complete:(void(^)())complete{
     
     NSLog(@"API's URL is:%@",url);
     NSLog(@"API' parameter is%@",parameter);

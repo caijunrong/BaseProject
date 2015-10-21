@@ -16,8 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.isNeedBackItem = YES;
+    [self setNavTitle:@"第3个页面"];
+    self.navigationItem.rightBarButtonItem = [self rightButtonItemWithTitle:nil orImageString:@"link_shuaxin"];
     [self.view setBackgroundColor:[UIColor purpleColor]];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
+    [self.view addSubview:self.promptNetErrorView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,14 +34,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

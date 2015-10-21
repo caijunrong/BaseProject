@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CommonViewController.h"
+#import "CommTableViewController.h"
 
-@interface ViewControllerA : CommonViewController
+@interface ViewControllerA : CommTableViewController
 
 @end
