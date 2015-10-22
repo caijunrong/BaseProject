@@ -2,8 +2,8 @@
 //  CommTableViewController.h
 //  BaseProject
 //
-//  Created by biyabi on 15/10/21.
-//  Copyright © 2015年 biyabi. All rights reserved.
+//  Created by caijunrong on 15/05/21.
+//  Copyright © 2015年 caijunrong. All rights reserved.
 //
 
 #import "CommonViewController.h"

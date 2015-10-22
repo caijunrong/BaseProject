@@ -31,6 +31,7 @@
 		606CAD721BD620AB007E21FE /* JRBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD711BD620AB007E21FE /* JRBarButtonItem.m */; settings = {ASSET_TAGS = (); }; };
 		606CAD741BD63CEC007E21FE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 606CAD731BD63CEC007E21FE /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
 		606CAD771BD64767007E21FE /* APPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD761BD64767007E21FE /* APPTool.m */; settings = {ASSET_TAGS = (); }; };
+		606FEA8F1BD871D70087D50D /* CommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FEA8E1BD871D70087D50D /* CommonView.m */; settings = {ASSET_TAGS = (); }; };
 		6070B3461BD72534006E0113 /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3451BD72534006E0113 /* PromptView.m */; settings = {ASSET_TAGS = (); }; };
 		6070B3491BD77B83006E0113 /* CommTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3481BD77B83006E0113 /* CommTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -102,6 +103,8 @@
 		606CAD731BD63CEC007E21FE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		606CAD751BD64767007E21FE /* APPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTool.h; sourceTree = "<group>"; };
 		606CAD761BD64767007E21FE /* APPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTool.m; sourceTree = "<group>"; };
+		606FEA8D1BD871D70087D50D /* CommonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonView.h; sourceTree = "<group>"; };
+		606FEA8E1BD871D70087D50D /* CommonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonView.m; sourceTree = "<group>"; };
 		6070B3441BD72534006E0113 /* PromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromptView.h; sourceTree = "<group>"; };
 		6070B3451BD72534006E0113 /* PromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptView.m; sourceTree = "<group>"; };
 		6070B3471BD77B83006E0113 /* CommTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommTableViewController.h; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 			children = (
 				6070B3431BD7247B006E0113 /* CommView */,
 				606CAD501BD5EF93007E21FE /* define */,
+				606FEA8D1BD871D70087D50D /* CommonView.h */,
+				606FEA8E1BD871D70087D50D /* CommonView.m */,
 				606CAD441BD4E04E007E21FE /* CommonViewController.h */,
 				606CAD451BD4E04E007E21FE /* CommonViewController.m */,
 				6070B3471BD77B83006E0113 /* CommTableViewController.h */,
@@ -498,6 +503,7 @@
 				606CACFE1BD48B5A007E21FE /* main.m in Sources */,
 				6070B3461BD72534006E0113 /* PromptView.m in Sources */,
 				606CAD461BD4E04E007E21FE /* CommonViewController.m in Sources */,
+				606FEA8F1BD871D70087D50D /* CommonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
