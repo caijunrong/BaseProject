@@ -1,57 +1,26 @@
 //
-//  CommonView.m
+//  CommCollectionViewController.m
 //  BaseProject
 //
 //  Created by caijunrong on 15/05/22.
 //  Copyright © 2015年 caijunrong. All rights reserved.
 //
 
-#import "CommonView.h"
+#import "CommCollectionViewController.h"
 
-@implementation CommonView
+@interface CommCollectionViewController ()
 
+@end
 
-- (instancetype)initWithFrame:(CGRect)frame{
-    if (self = [super initWithFrame:frame]) {
-        
-    }
-    return self;
-}
+@implementation CommCollectionViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //初始化page。自己决定
+    self.page = 1;
+    
+    self.isRefresh = YES;
 
-- (void)initTableView:(BOOL)isgroupTableView{
-    
-    if (isgroupTableView) {
-        
-        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
-    }else{
-        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-    }
-    
-    _tableView.delegate = self;
-    _tableView.dataSource = self;
-    
-    UIView *view = [[UIView alloc] init];
-    view.backgroundColor = [UIColor clearColor];
-    _tableView.tableFooterView = view;
-    
-}
-
-- (UITableView *)tableView{
-    
-    //如果没有初始化的话，默认plain样式
-    if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
-        
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        
-        UIView *view = [[UIView alloc] init];
-        view.backgroundColor = [UIColor clearColor];
-        _tableView.tableFooterView = view;
-    }
-    
-    return _tableView;
 }
 
 //增加刷新 & 加载功能
@@ -69,58 +38,12 @@
     [self.collectionView.header beginRefreshing];
 }
 
-//增加刷新 & 加载功能
-- (void)addTableViewRefreshFunction{
-    
-    __weak typeof(self) weakself = self;
-    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [weakself getData:YES];
-    }];
-    
-    self.tableView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        [weakself getData:NO];
-    }];
-    
-    [self.tableView.header beginRefreshing];
-}
-
 //网路请求
 - (void)getData:(BOOL)isRefresh{
     
     
 }
 
-#pragma mark ---- tableview delegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 0;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 0;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"");
-    
-    if (getClickTableViewBlick) {
-        getClickTableViewBlick(indexPath);
-    }
-    
-}
-
-- (void)setClickTableViewBlick:(void (^)(NSIndexPath *))clickBlock{
-    getClickTableViewBlick = [clickBlock copy];
-}
-
-#pragma mark UICollectionView
 
 //实际使用中重写这个方法，把collectionview变成自己想要的样式，这里只是做一个模版
 -(void)initCollectionCell{
@@ -129,13 +52,13 @@
     
     UICollectionViewFlowLayout *flowLayout= [[UICollectionViewFlowLayout alloc]init];
     //修改
-    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
     flowLayout.minimumLineSpacing = _horizontalSpace;
     flowLayout.sectionInset = UIEdgeInsetsMake(5, 5, 5, 5);
     
     UICollectionView *myCollectionView;
     
-    myCollectionView = [[UICollectionView alloc] initWithFrame:self.frame collectionViewLayout:flowLayout];
+    myCollectionView = [[UICollectionView alloc] initWithFrame:self.view.frame collectionViewLayout:flowLayout];
     
     myCollectionView.delegate = self;
     myCollectionView.dataSource = self;
@@ -145,15 +68,16 @@
     
     //修改
     //    [myCollectionView registerClass:[SpecialHorizontalCollectionViewCell class] forCellWithReuseIdentifier:@"SpecialHorizontalCollectionViewCell"];
-    
+    //或者
     //修改
-//    [myCollectionView registerNib:[UINib nibWithNibName:@"SpecialHorizontalCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"SpecialHorizontalCollectionViewCell"];
+    //    [myCollectionView registerNib:[UINib nibWithNibName:@"SpecialHorizontalCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"SpecialHorizontalCollectionViewCell"];
     
-    [self addSubview:myCollectionView];
+//    [self.view addSubview:myCollectionView];
     self.collectionView = myCollectionView;
     
     
 }
+
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -172,7 +96,7 @@
         NSLog(@"--");
     }
     
-    UICollectionReusableView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"collecionviewCell" forIndexPath:indexPath];
+    UICollectionReusableView *headView = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"collecionviewheadCell" forIndexPath:indexPath];
     
     return headView;
 }
@@ -210,5 +134,22 @@
 -(void)setClickCellBlock:(void (^)(int))clickBlock{
     getClickBlock = [clickBlock copy];
 }
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

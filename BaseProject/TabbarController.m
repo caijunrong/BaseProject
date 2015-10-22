@@ -75,7 +75,7 @@
         vC.tabBarItem = item3;
         UINavigationController *navigationViewControllerC = [[UINavigationController alloc]initWithRootViewController:vC];
         
-        ViewControllerB *vD = [[ViewControllerB alloc]init];
+        ViewControllerD *vD = [[ViewControllerD alloc]init];
         vD.tabBarItem = item4;
         UINavigationController *navigationViewControllerD = [[UINavigationController alloc]initWithRootViewController:vD];
         

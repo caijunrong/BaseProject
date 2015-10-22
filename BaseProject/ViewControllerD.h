@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommCollectionViewController.h"
 
-@interface ViewControllerD : UIViewController
+@interface ViewControllerD : CommCollectionViewController
 
 @end

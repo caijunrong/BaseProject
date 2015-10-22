@@ -34,6 +34,9 @@
 		606FEA8F1BD871D70087D50D /* CommonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606FEA8E1BD871D70087D50D /* CommonView.m */; settings = {ASSET_TAGS = (); }; };
 		6070B3461BD72534006E0113 /* PromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3451BD72534006E0113 /* PromptView.m */; settings = {ASSET_TAGS = (); }; };
 		6070B3491BD77B83006E0113 /* CommTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6070B3481BD77B83006E0113 /* CommTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		60D3A4C31BD8CB1C00C29D8D /* JCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D3A4C11BD8CB1C00C29D8D /* JCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		60D3A4C41BD8CB1C00C29D8D /* JCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60D3A4C21BD8CB1C00C29D8D /* JCollectionViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		60D3A4C71BD8CE3900C29D8D /* CommCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D3A4C61BD8CE3900C29D8D /* CommCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,11 @@
 		6070B3451BD72534006E0113 /* PromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptView.m; sourceTree = "<group>"; };
 		6070B3471BD77B83006E0113 /* CommTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommTableViewController.h; sourceTree = "<group>"; };
 		6070B3481BD77B83006E0113 /* CommTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommTableViewController.m; sourceTree = "<group>"; };
+		60D3A4C01BD8CB1C00C29D8D /* JCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCollectionViewCell.h; sourceTree = "<group>"; };
+		60D3A4C11BD8CB1C00C29D8D /* JCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCollectionViewCell.m; sourceTree = "<group>"; };
+		60D3A4C21BD8CB1C00C29D8D /* JCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JCollectionViewCell.xib; sourceTree = "<group>"; };
+		60D3A4C51BD8CE3900C29D8D /* CommCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommCollectionViewController.h; sourceTree = "<group>"; };
+		60D3A4C61BD8CE3900C29D8D /* CommCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +285,8 @@
 				606CAD451BD4E04E007E21FE /* CommonViewController.m */,
 				6070B3471BD77B83006E0113 /* CommTableViewController.h */,
 				6070B3481BD77B83006E0113 /* CommTableViewController.m */,
+				60D3A4C51BD8CE3900C29D8D /* CommCollectionViewController.h */,
+				60D3A4C61BD8CE3900C29D8D /* CommCollectionViewController.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -301,6 +311,9 @@
 				606CAD681BD5F3C8007E21FE /* ViewControllerC.m */,
 				606CAD6A1BD5F3D2007E21FE /* ViewControllerD.h */,
 				606CAD6B1BD5F3D2007E21FE /* ViewControllerD.m */,
+				60D3A4C01BD8CB1C00C29D8D /* JCollectionViewCell.h */,
+				60D3A4C11BD8CB1C00C29D8D /* JCollectionViewCell.m */,
+				60D3A4C21BD8CB1C00C29D8D /* JCollectionViewCell.xib */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -423,6 +436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D3A4C41BD8CB1C00C29D8D /* JCollectionViewCell.xib in Resources */,
 				606CAD0C1BD48B5A007E21FE /* LaunchScreen.storyboard in Resources */,
 				606CAD741BD63CEC007E21FE /* Localizable.strings in Resources */,
 				606CAD091BD48B5A007E21FE /* Assets.xcassets in Resources */,
@@ -490,7 +504,9 @@
 				606CAD321BD49E5A007E21FE /* APIUtil.m in Sources */,
 				606CAD4C1BD5EADD007E21FE /* TabbarController.m in Sources */,
 				606CAD691BD5F3C8007E21FE /* ViewControllerC.m in Sources */,
+				60D3A4C31BD8CB1C00C29D8D /* JCollectionViewCell.m in Sources */,
 				606CAD041BD48B5A007E21FE /* ViewController.m in Sources */,
+				60D3A4C71BD8CE3900C29D8D /* CommCollectionViewController.m in Sources */,
 				606CAD011BD48B5A007E21FE /* AppDelegate.m in Sources */,
 				606CAD721BD620AB007E21FE /* JRBarButtonItem.m in Sources */,
 				606CAD6C1BD5F3D2007E21FE /* ViewControllerD.m in Sources */,

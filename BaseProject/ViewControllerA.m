@@ -45,6 +45,7 @@
     
 }
 
+//重写getdata方法
 -(void)getData:(BOOL)isRefresh{
     
     [super getData:isRefresh];

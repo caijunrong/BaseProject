@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "APIUtil.h"
+#import <SDImageCache.h>
 
 @interface AppDelegate ()
 
@@ -67,8 +68,20 @@
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 
+-(void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    [[SDImageCache sharedImageCache]clearMemory];
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+}
+
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    //关闭之后，清空SD图片缓存
+    [[SDImageCache sharedImageCache]cleanDisk];
+    [[SDImageCache sharedImageCache]clearMemory];
+    
+    
 }
 
 @end
