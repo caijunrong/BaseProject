@@ -39,6 +39,7 @@
 -(NSString *)checkIDImageUrl{
     NSString *tempImageUrl = self;
     
+    
     if ([self containsString:@","]) {
         tempImageUrl = [self getArrayWithSeparatedString:@","][0];
     }
