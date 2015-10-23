@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		26EC5E4B2DF91E71D586A411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BB939978E33D17822AE3F1 /* libPods.a */; };
+		604D93B71BD9C73400C55A98 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D93B41BD9C73400C55A98 /* UIImage+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		604D93B81BD9C73400C55A98 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 604D93B61BD9C73400C55A98 /* NSString+Extension.m */; settings = {ASSET_TAGS = (); }; };
 		606CACFE1BD48B5A007E21FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CACFD1BD48B5A007E21FE /* main.m */; };
 		606CAD011BD48B5A007E21FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD001BD48B5A007E21FE /* AppDelegate.m */; };
 		606CAD041BD48B5A007E21FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 606CAD031BD48B5A007E21FE /* ViewController.m */; };
@@ -60,6 +62,10 @@
 		17BB939978E33D17822AE3F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4884DE16A28D0CBCD84D37D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		531836D2F0E38165471AA94C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		604D93B31BD9C73400C55A98 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		604D93B41BD9C73400C55A98 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		604D93B51BD9C73400C55A98 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		604D93B61BD9C73400C55A98 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		606CACF91BD48B5A007E21FE /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		606CACFD1BD48B5A007E21FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		606CACFF1BD48B5A007E21FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -266,6 +272,10 @@
 		606CAD3E1BD4CBA1007E21FE /* Extention */ = {
 			isa = PBXGroup;
 			children = (
+				604D93B31BD9C73400C55A98 /* UIImage+Extension.h */,
+				604D93B41BD9C73400C55A98 /* UIImage+Extension.m */,
+				604D93B51BD9C73400C55A98 /* NSString+Extension.h */,
+				604D93B61BD9C73400C55A98 /* NSString+Extension.m */,
 				606CAD381BD4BF25007E21FE /* NSString+PJR.h */,
 				606CAD391BD4BF25007E21FE /* NSString+PJR.m */,
 				606CAD401BD4D324007E21FE /* RegExCategories.h */,
@@ -505,6 +515,7 @@
 				606CAD4C1BD5EADD007E21FE /* TabbarController.m in Sources */,
 				606CAD691BD5F3C8007E21FE /* ViewControllerC.m in Sources */,
 				60D3A4C31BD8CB1C00C29D8D /* JCollectionViewCell.m in Sources */,
+				604D93B81BD9C73400C55A98 /* NSString+Extension.m in Sources */,
 				606CAD041BD48B5A007E21FE /* ViewController.m in Sources */,
 				60D3A4C71BD8CE3900C29D8D /* CommCollectionViewController.m in Sources */,
 				606CAD011BD48B5A007E21FE /* AppDelegate.m in Sources */,
@@ -513,6 +524,7 @@
 				606CAD5F1BD5F108007E21FE /* CommDefine.m in Sources */,
 				606CAD661BD5F3BE007E21FE /* ViewControllerB.m in Sources */,
 				606CAD771BD64767007E21FE /* APPTool.m in Sources */,
+				604D93B71BD9C73400C55A98 /* UIImage+Extension.m in Sources */,
 				606CAD421BD4D324007E21FE /* RegExCategories.m in Sources */,
 				606CAD3A1BD4BF25007E21FE /* NSString+PJR.m in Sources */,
 				6070B3491BD77B83006E0113 /* CommTableViewController.m in Sources */,
